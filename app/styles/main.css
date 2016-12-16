@@ -1,0 +1,22 @@
+body {
+	background-color: #ddd;
+}
+
+.panel-body{
+	max-width: 400px;
+}
+
+.panel-body > img{
+	width: 100%;
+}
+
+#heading{
+	font-weight: 600;
+	display: block;
+	word-wrap: break-word;
+}
+
+#content{
+	display: block;
+	word-wrap: break-word;
+}

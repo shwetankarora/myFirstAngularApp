@@ -1,0 +1,34 @@
+<div class="modal fade" id="{{popupId}}" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">
+			</button>
+			<h4 class="modal-title" id="myModalLabel">{{popupTitle}}</h4>
+		</div>
+		<form>
+			<div class="modal-body">
+				<div class="form-group">
+					<label>Url</label>
+					<input type="url" class="form-control" placeholder="Enter Image Url" ng-model="$parent.url">
+					<small class="form-text text-muted">Image must be 640x640</small>
+				</div>
+				<div class="form-group">
+					<label>Title</label>
+					<input type="text" class="form-control" placeholder="Enter Image Title" ng-model="$parent.title">
+					<small class="form-text text-muted">Title of the Image</small>
+				</div>
+				<div class="form-group">
+					<label>Description</label>
+					<input type="text" class="form-control" placeholder="Enter Image Description" ng-model="$parent.description">
+					<small class="form-text text-muted">Description of the Image</small>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" ng-click="deleteImage()" ng-hide="hideCheck()">Delete</button>
+				<button type="submit" class="btn btn-primary" ng-click="check(url, title, description)">{{popupSubmit}}</button>
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
