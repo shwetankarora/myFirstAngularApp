@@ -25,8 +25,8 @@
 				</div>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" ng-click="deleteImage()" ng-hide="hideCheck()">Delete</button>
-				<button type="submit" class="btn btn-primary" ng-click="check(url, title, description)">{{popupSubmit}}</button>
+				<button type="button" class="btn btn-secondary" ng-click="deleteImage()" ng-hide="hideCheck()" data-dismiss="modal">Delete</button>
+				<button type="submit" class="btn btn-primary" ng-click="check(url, title, description)" data-dismiss="modal">{{popupSubmit}}</button>
 			</div>
 		</form>
 		</div>
