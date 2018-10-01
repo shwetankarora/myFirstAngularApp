@@ -46,6 +46,7 @@ var imageModel = [
 ]
 
 IMApp.controller("IMCtrl", function($scope){
+	//Function start
 	$scope.image = imageModel;
 	
 	$scope.popupId = "";
